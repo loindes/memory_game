@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Iva Filipović" />
+    <meta name="keywords" content="Memory game, JS, CSS, HTML" />
+    <meta name="description" content="This is memory game from outer space" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Memory</title>
+  </head>
+  <body onload="init()">
+    <header><h1>MEMORY GAME from outer space...</h1></header>
+    <main>
+      <aside>
+        <button onclick="resetIgre()">NOVA IGRA</button>
+      </aside>
+      <section>
+        <div class="kartica" data-name="algebra">
+          <img
+            class="prednja-strana"
+            src=".//Pictures/algebra.png"
+            alt="Algebra kartica"
+          />
+          <img
+            class="straznja-strana"
+            src=".//Pictures/memoryCard.png"
+            alt="memory kartica"
+          />
+        </div>
+        <div class="kartica" data-name="algebra">
+          <img
+            class="prednja-strana"
+            src=".//Pictures/algebra.png"
+            alt="Algebra kartica"
+          />
+          <img
+            class="straznja-strana"
+            src=".//Pictures/memoryCard.png"
+            alt="memory kartica"
+          />
+        </div>
+        <div class="kartica" data-name="frontend">
+          <img
+            class="prednja-strana"
+            src=".//Pictures/frontendCard.png"
+            alt="Frontend kartica"
+          />
+          <img
+            class="straznja-strana"
+            src=".//Pictures/memoryCard.png"
+            alt="memory kartica"
+          />
+        </div>
+        <div class="kartica" data-name="frontend">
+          <img
+            class="prednja-strana"
+            src=".//Pictures/frontendCard.png"
+            alt="Frontend kartica"
+          />
+          <img
+            class="straznja-strana"
+            src=".//Pictures/memoryCard.png"
+            alt="memory kartica"
+          />
+        </div>
+        <div class="kartica" data-name="html">
+          <img
+            class="prednja-strana"
+            src=".//Pictures/htmlCard.png"
+            alt="HTML kartica"
+          />
+          <img
+            class="straznja-strana"
+            src=".//Pictures/memoryCard.png"
+            alt="memory kartica"
+          />
+        </div>
+        <div class="kartica" data-name="html">
+          <img
+            class="prednja-strana"
+            src=".//Pictures/htmlCard.png"
+            alt="HTML kartica"
+          />
+          <img
+            class="straznja-strana"
+            src=".//Pictures/memoryCard.png"
+            alt="memory kartica"
+          />
+        </div>
+        <div class="kartica" data-name="css">
+          <img
+            class="prednja-strana"
+            src=".//Pictures/cssCard.png"
+            alt="CSS kartica"
+          />
+          <img
+            class="straznja-strana"
+            src=".//Pictures/memoryCard.png"
+            alt="memory kartica"
+          />
+        </div>
+        <div class="kartica" data-name="css">
+          <img
+            class="prednja-strana"
+            src=".//Pictures/cssCard.png"
+            alt="CSS kartica"
+          />
+          <img
+            class="straznja-strana"
+            src=".//Pictures/memoryCard.png"
+            alt="memory kartica"
+          />
+        </div>
+        <div class="kartica" data-name="sass">
+          <img
+            class="prednja-strana"
+            src=".//Pictures/sass.png"
+            alt="SASS kartica"
+          />
+          <img
+            class="straznja-strana"
+            src=".//Pictures/memoryCard.png"
+            alt="memory kartica"
+          />
+        </div>
+        <div class="kartica" data-name="sass">
+          <img
+            class="prednja-strana"
+            src=".//Pictures/sass.png"
+            alt="SASS kartica"
+          />
+          <img
+            class="straznja-strana"
+            src=".//Pictures/memoryCard.png"
+            alt="memory kartica"
+          />
+        </div>
+        <div class="kartica" data-name="js">
+          <img
+            class="prednja-strana"
+            src=".//Pictures/jsCard.png"
+            alt="JS kartica"
+          />
+          <img
+            class="straznja-strana"
+            src=".//Pictures/memoryCard.png"
+            alt="memory kartica"
+          />
+        </div>
+        <div class="kartica" data-name="js">
+          <img
+            class="prednja-strana"
+            src=".//Pictures/jsCard.png"
+            alt="JS kartica"
+          />
+          <img
+            class="straznja-strana"
+            src=".//Pictures/memoryCard.png"
+            alt="memory kartica"
+          />
+        </div>
+        <div class="kartica" data-name="jQuery">
+          <img
+            class="prednja-strana"
+            src=".//Pictures/jQuery.png"
+            alt="jQuery kartica"
+          />
+          <img
+            class="straznja-strana"
+            src=".//Pictures/memoryCard.png"
+            alt="memory kartica"
+          />
+        </div>
+        <div class="kartica" data-name="jQuery">
+          <img
+            class="prednja-strana"
+            src=".//Pictures/jQuery.png"
+            alt="jQuery kartica"
+          />
+          <img
+            class="straznja-strana"
+            src=".//Pictures/memoryCard.png"
+            alt="memory kartica"
+          />
+        </div>
+        <div class="kartica" data-name="git">
+          <img
+            class="prednja-strana"
+            src=".//Pictures/git.png"
+            alt="Git kartica"
+          />
+          <img
+            class="straznja-strana"
+            src=".//Pictures/memoryCard.png"
+            alt="memory kartica"
+          />
+        </div>
+        <div class="kartica" data-name="git">
+          <img
+            class="prednja-strana"
+            src=".//Pictures/git.png"
+            alt="GIt kartica"
+          />
+          <img
+            class="straznja-strana"
+            src=".//Pictures/memoryCard.png"
+            alt="memory kartica"
+          />
+        </div>
+      </section>
+      <div class="ispis-pokusaja">
+        <h2>Broj pokušaja:</h2>
+        <h2 id="input">_</h2>
+      </div>
+    </main>
+    <footer>
+      <p class="copyRight">Iva Filipović © <strong>2021</strong></p>
+    </footer>
+  </body>
+</html>
