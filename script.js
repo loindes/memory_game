@@ -89,9 +89,59 @@
     //odgoda početka nove igre dok se sve kartice ne vrate u početno stanje zbog razmještaja
     setTimeout(() => {
         init();
-    }, 500);
+    }, 500); 
  }
 
 
+
+
+ //promijeni pozadinu kartica
+ function init2() {  
+ const buttons = document.querySelectorAll(".meni-btn");
+ let sveKartice = document.querySelectorAll(".straznja-strana");
+ let kliknutiButton;
+
+  function provjeriValue(){
+    imeButtona = this.getAttribute("name");
+    
+    if (imeButtona === "zima") {
+        sveKartice.forEach( kartica => {              
+            kartica.src = "pictures2/winter.jpg";       
+        })
+    } else if (imeButtona === "proljece") {
+        sveKartice.forEach( kartica => {              
+            kartica.src = "pictures2/spring.jpg";       
+        })
+    } else if (imeButtona === "ljeto") {
+        sveKartice.forEach( kartica => {              
+            kartica.src = "pictures2/summer.jpg";       
+        })
+    } else if (imeButtona === "jesen") {
+        sveKartice.forEach( kartica => {              
+            kartica.src = "pictures2/autumn.jpg";       
+        })
+    } else {
+        sveKartice.forEach( kartica => {              
+            kartica.src = "Pictures/memoryCard.png";       
+        })
+    }     
+ }
+
+buttons.forEach( button => button.addEventListener("click", provjeriValue));
+}
+
+
+//padajući izbornik
+function padajuciIzbornik() {
+    var button = document.querySelectorAll(".meni-btn");
+
+    button.forEach(i => i.classList.toggle("visible"));    
+}
+
+
+
+
+
+
+
  //stopwatch na svaki par s ispisom sekundi + overall time
- //counter za broj pokušaja

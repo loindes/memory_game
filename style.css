@@ -10,7 +10,7 @@ body {
   font-family: "Akaya Telivigala", cursive;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 10vh auto 5vh;
+  grid-template-rows: minmax(10vh, auto) auto 5vh;
 }
 
 header {
@@ -33,7 +33,7 @@ footer {
 h1 {
   width: 100%;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   color: rgb(0, 0, 48);
   text-shadow: 1px 2px rgb(201, 201, 199), -1px -2px rgb(182, 182, 182),
     2px 8px 4px rgb(196, 196, 196), 4px 16px 8px rgb(182, 182, 182),
@@ -44,7 +44,7 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-button {
+.reset-igre {
   background-color: rgb(195, 195, 195);
   color: rgb(80, 80, 80);
   font-size: 1em;
@@ -55,7 +55,7 @@ button {
   border-radius: 5px;
 }
 
-button:hover {
+.reset-igre:hover {
   background-color: rgb(80, 80, 80);
   color: rgb(195, 195, 195);
   border: 2px solid rgb(195, 195, 195);
@@ -117,6 +117,7 @@ h2 {
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform 0.5s;
+  box-shadow: 2px 2px 8px rgba(160, 160, 160, 0.8);
 }
 
 .kartica:active {
@@ -138,6 +139,102 @@ img {
 
 .prednja-strana {
   transform: rotateY(180deg);
+}
+
+.buttoni {
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
+
+.wrapper {
+  position: absolute;
+  top: 25px;
+  right: 0;
+}
+
+.buttoni::before {
+  width: 2em;
+  height: 2em;
+  content: "Promijeni temu";
+  padding: 4px;
+  background-color: rgba(138, 138, 138, 0.5);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.buttoni:hover {
+  font-weight: 700;
+}
+
+.meni-btn {
+  visibility: hidden;
+  color: black;
+  background-color: rgba(34, 34, 34, 0.4);
+  border-radius: 5px;
+  font-size: 1em;
+  display: block;
+  width: 1.5em;
+  height: 2.5em;
+  margin: 4px 0 4px auto;
+}
+
+.meni-btn:hover {
+  width: 2.5em;
+  transition: width 0.5s;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.zima {
+  color: aqua;
+}
+
+.proljece {
+  color: rgb(225, 79, 245);
+}
+
+.ljeto {
+  color: rgb(255, 230, 0);
+}
+
+.jesen {
+  color: rgb(165, 42, 42);
+}
+
+.pocetno {
+  color: rgb(201, 201, 201);
+}
+
+.zima::before,
+.proljece::before,
+.ljeto::before,
+.jesen::before,
+.pocetno::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+}
+
+.zima::before {
+  content: "\f2dc";
+}
+
+.proljece::before {
+  content: "\f743";
+}
+
+.ljeto::before {
+  content: "\f185";
+}
+
+.jesen::before {
+  content: "\f06c";
+}
+
+.pocetno::before {
+  content: "\f2ed";
 }
 
 .copyRight {

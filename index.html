@@ -12,206 +12,212 @@
       href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
     <title>Memory</title>
   </head>
-  <body onload="init()">
+  <body onload="init(), init2()">
     <header><h1>MEMORY GAME from outer space...</h1></header>
     <main>
       <aside>
-        <button onclick="resetIgre()">NOVA IGRA</button>
+        <button class="reset-igre" onclick="resetIgre()">NOVA IGRA</button>
       </aside>
       <section>
         <div class="kartica" data-name="algebra">
           <img
             class="prednja-strana"
-            src=".//Pictures/algebra.png"
+            src="Pictures/algebra.png"
             alt="Algebra kartica"
           />
           <img
             class="straznja-strana"
-            src=".//Pictures/memoryCard.png"
+            src="Pictures/memoryCard.png"
             alt="memory kartica"
           />
         </div>
         <div class="kartica" data-name="algebra">
           <img
             class="prednja-strana"
-            src=".//Pictures/algebra.png"
+            src="Pictures/algebra.png"
             alt="Algebra kartica"
           />
           <img
             class="straznja-strana"
-            src=".//Pictures/memoryCard.png"
+            src="Pictures/memoryCard.png"
             alt="memory kartica"
           />
         </div>
         <div class="kartica" data-name="frontend">
           <img
             class="prednja-strana"
-            src=".//Pictures/frontendCard.png"
+            src="Pictures/frontendCard.png"
             alt="Frontend kartica"
           />
           <img
             class="straznja-strana"
-            src=".//Pictures/memoryCard.png"
+            src="Pictures/memoryCard.png"
             alt="memory kartica"
           />
         </div>
         <div class="kartica" data-name="frontend">
           <img
             class="prednja-strana"
-            src=".//Pictures/frontendCard.png"
+            src="Pictures/frontendCard.png"
             alt="Frontend kartica"
           />
           <img
             class="straznja-strana"
-            src=".//Pictures/memoryCard.png"
+            src="Pictures/memoryCard.png"
             alt="memory kartica"
           />
         </div>
         <div class="kartica" data-name="html">
           <img
             class="prednja-strana"
-            src=".//Pictures/htmlCard.png"
+            src="Pictures/htmlCard.png"
             alt="HTML kartica"
           />
           <img
             class="straznja-strana"
-            src=".//Pictures/memoryCard.png"
+            src="Pictures/memoryCard.png"
             alt="memory kartica"
           />
         </div>
         <div class="kartica" data-name="html">
           <img
             class="prednja-strana"
-            src=".//Pictures/htmlCard.png"
+            src="Pictures/htmlCard.png"
             alt="HTML kartica"
           />
           <img
             class="straznja-strana"
-            src=".//Pictures/memoryCard.png"
+            src="Pictures/memoryCard.png"
             alt="memory kartica"
           />
         </div>
         <div class="kartica" data-name="css">
           <img
             class="prednja-strana"
-            src=".//Pictures/cssCard.png"
+            src="Pictures/cssCard.png"
             alt="CSS kartica"
           />
           <img
             class="straznja-strana"
-            src=".//Pictures/memoryCard.png"
+            src="Pictures/memoryCard.png"
             alt="memory kartica"
           />
         </div>
         <div class="kartica" data-name="css">
           <img
             class="prednja-strana"
-            src=".//Pictures/cssCard.png"
+            src="Pictures/cssCard.png"
             alt="CSS kartica"
           />
           <img
             class="straznja-strana"
-            src=".//Pictures/memoryCard.png"
+            src="Pictures/memoryCard.png"
             alt="memory kartica"
           />
         </div>
         <div class="kartica" data-name="sass">
           <img
             class="prednja-strana"
-            src=".//Pictures/sass.png"
+            src="Pictures/sass.png"
             alt="SASS kartica"
           />
           <img
             class="straznja-strana"
-            src=".//Pictures/memoryCard.png"
+            src="Pictures/memoryCard.png"
             alt="memory kartica"
           />
         </div>
         <div class="kartica" data-name="sass">
           <img
             class="prednja-strana"
-            src=".//Pictures/sass.png"
+            src="Pictures/sass.png"
             alt="SASS kartica"
           />
           <img
             class="straznja-strana"
-            src=".//Pictures/memoryCard.png"
+            src="Pictures/memoryCard.png"
             alt="memory kartica"
           />
         </div>
         <div class="kartica" data-name="js">
           <img
             class="prednja-strana"
-            src=".//Pictures/jsCard.png"
+            src="Pictures/jsCard.png"
             alt="JS kartica"
           />
           <img
             class="straznja-strana"
-            src=".//Pictures/memoryCard.png"
+            src="Pictures/memoryCard.png"
             alt="memory kartica"
           />
         </div>
         <div class="kartica" data-name="js">
           <img
             class="prednja-strana"
-            src=".//Pictures/jsCard.png"
+            src="Pictures/jsCard.png"
             alt="JS kartica"
           />
           <img
             class="straznja-strana"
-            src=".//Pictures/memoryCard.png"
+            src="Pictures/memoryCard.png"
             alt="memory kartica"
           />
         </div>
         <div class="kartica" data-name="jQuery">
           <img
             class="prednja-strana"
-            src=".//Pictures/jQuery.png"
+            src="Pictures/jQuery.png"
             alt="jQuery kartica"
           />
           <img
             class="straznja-strana"
-            src=".//Pictures/memoryCard.png"
+            src="Pictures/memoryCard.png"
             alt="memory kartica"
           />
         </div>
         <div class="kartica" data-name="jQuery">
           <img
             class="prednja-strana"
-            src=".//Pictures/jQuery.png"
+            src="Pictures/jQuery.png"
             alt="jQuery kartica"
           />
           <img
             class="straznja-strana"
-            src=".//Pictures/memoryCard.png"
+            src="Pictures/memoryCard.png"
             alt="memory kartica"
           />
         </div>
         <div class="kartica" data-name="git">
           <img
             class="prednja-strana"
-            src=".//Pictures/git.png"
+            src="Pictures/git.png"
             alt="Git kartica"
           />
           <img
             class="straznja-strana"
-            src=".//Pictures/memoryCard.png"
+            src="Pictures/memoryCard.png"
             alt="memory kartica"
           />
         </div>
         <div class="kartica" data-name="git">
           <img
             class="prednja-strana"
-            src=".//Pictures/git.png"
+            src="Pictures/git.png"
             alt="GIt kartica"
           />
           <img
             class="straznja-strana"
-            src=".//Pictures/memoryCard.png"
+            src="Pictures/memoryCard.png"
             alt="memory kartica"
           />
         </div>
@@ -219,6 +225,14 @@
       <div class="ispis-pokusaja">
         <h2>Broj pokušaja:</h2>
         <h2 id="input">_</h2>
+      </div>
+      <div class="buttoni" onclick="padajuciIzbornik()"></div>
+      <div class="wrapper">
+        <button class="meni-btn zima" name="zima"></button>
+        <button class="meni-btn proljece" name="proljece"></button>
+        <button class="meni-btn ljeto" name="ljeto"></button>
+        <button class="meni-btn jesen" name="jesen"></button>
+        <button class="meni-btn pocetno" name="pocetno"></button>
       </div>
     </main>
     <footer>
